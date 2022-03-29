@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace CrownReady_V2.Tests;
+namespace Tests;
 
 public class UnitTest1
 {

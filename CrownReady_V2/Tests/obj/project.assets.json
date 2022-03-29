@@ -5978,11 +5978,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/CrownReady_V2.Tests/CrownReady_V2.Tests.csproj",
-      "projectName": "CrownReady_V2.Tests",
-      "projectPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/CrownReady_V2.Tests/CrownReady_V2.Tests.csproj",
+      "projectUniqueName": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/Tests.csproj",
+      "projectName": "Tests",
+      "projectPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/Tests.csproj",
       "packagesPath": "/Users/joyevans/.nuget/packages/",
-      "outputPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/CrownReady_V2.Tests/obj/",
+      "outputPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/joyevans/.nuget/NuGet/NuGet.Config"
