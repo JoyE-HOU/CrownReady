@@ -1,3 +1,5 @@
+// To create xunit tests, run: dotnet new xunit -n Tests  
+// Once created, run: dotnet add package xUnit  
 using Xunit;
 
 namespace Tests;

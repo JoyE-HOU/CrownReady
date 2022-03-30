@@ -1,4 +1,5 @@
-namespace CrownReady;
+// To create models folder, run: dotnet new classlib -n "Models"  
+namespace Models;
 
 public class Storefront {
     public string? Name { get; set; }
