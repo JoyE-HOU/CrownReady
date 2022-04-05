@@ -1,12 +1,10 @@
+using DL;
 using Models;
 
 namespace UI;
 
 public class MainMenu{
-
-    public List<Storefront> allStorefronts = new List<Storefront>();
     public void Start(){
-
 
         bool exit = false;
         Console.WriteLine("Welcome to CrownReady!");
@@ -39,10 +37,10 @@ public class MainMenu{
                         State = state
                     };
 
-                    this.allStorefronts.Add(newStorefront);
+                    StaticStorage.allStorefronts.Add(newStorefront);
 
                     Console.WriteLine("Here are all your storefronts:");
-                    foreach(Storefront store in this.allStorefronts)
+                    foreach(Storefront store in StaticStorage.allStorefronts)
                     {
                     Console.WriteLine($" Store: {store.Name} \nAddress: {store.Address} \nCity: {store.City} \nState: {store.State}");
                     }
