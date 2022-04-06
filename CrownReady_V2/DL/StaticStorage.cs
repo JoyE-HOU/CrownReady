@@ -1,6 +1,22 @@
 ﻿using Models;
 namespace DL;
-public static class StaticStorage
+public class StaticStorage
 {
-    public static List<Storefront> allStorefronts = new List<Storefront>();
+    private static List<Storefront> _allStorefronts = new List<Storefront>();
+    /// <summary>
+    /// Returns all storefronts from _allStorefronts in the list 
+    /// </summary>
+    /// <returns>all storefronts in the list</returns>
+    public List<Storefront> GetAllStorefronts()
+    {
+        return StaticStorage._allStorefronts;
+    }
+    /// <summary>
+    /// Adds a new storefront to the list
+    /// </summary>
+    /// <param name="storefrontToAdd">new storefront object to list</param>
+    public void AddStorefront(Storefront storefrontToAdd)
+    {
+        StaticStorage._allStorefronts.Add(storefrontToAdd);
+    }
 }
