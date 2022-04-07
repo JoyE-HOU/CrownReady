@@ -13,7 +13,8 @@ public class MainMenu{
         {
             Console.WriteLine("What would you like to do today?");
             Console.WriteLine("1. Create a new storefront");
-            Console.WriteLine("2. Exit");
+            Console.WriteLine("2. View All Locations");
+            Console.WriteLine("X. Exit");
             string? response = Console.ReadLine();
 
             switch (response)
@@ -27,7 +28,6 @@ public class MainMenu{
                     string? city = Console.ReadLine();
                     Console.WriteLine("State: ");
                     string? state = Console.ReadLine();
-                    break;
             
                     // initialized a class using object initializer instead of an empty constructor
                     Storefront newStorefront = new Storefront{
@@ -37,13 +37,8 @@ public class MainMenu{
                         State = state
                     };
 
-                    StaticStorage.allStorefronts.Add(newStorefront);
+                    StaticStorage.AddStorefront(newStorefront);
 
-                    Console.WriteLine("Here are all your storefronts:");
-                    foreach(Storefront store in StaticStorage.allStorefronts)
-                    {
-                    Console.WriteLine($" Store: {store.Name} \nAddress: {store.Address} \nCity: {store.City} \nState: {store.State}");
-                    }
 
                     Console.WriteLine("Would you like to add another one? [y/n]");
                     string? input = Console.ReadLine();
@@ -51,6 +46,17 @@ public class MainMenu{
                         {
                             exit = true;
                         }
+                    break;
+
+                    case "2":
+                    Console.WriteLine("Here are all your storefronts:");
+                    List<Storefront> allStorefronts = StaticStorage.GetAllStorefronts();
+                    foreach(Storefront store in allStorefronts)
+                    {
+                    Console.WriteLine($"Store: {store.Name} \nAddress: {store.Address} \nCity: {store.City} \nState: {store.State}");
+                    }
+                    break;
+
                     default:
                         Console.WriteLine("Try again please.");
                         break;
