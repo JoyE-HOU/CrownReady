@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/Tests.csproj": {}
+    "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Tests/Tests.csproj": {}
   },
   "projects": {
-    "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/Tests.csproj": {
+    "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Models/Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/Tests.csproj",
-        "projectName": "Tests",
-        "projectPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/Tests.csproj",
+        "projectUniqueName": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Models/Models.csproj",
+        "projectName": "Models",
+        "projectPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Models/Models.csproj",
         "packagesPath": "/Users/joyevans/.nuget/packages/",
-        "outputPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/obj/",
+        "outputPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Models/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/joyevans/.nuget/NuGet/NuGet.Config"
@@ -26,6 +26,62 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Tests/Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Tests/Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Tests/Tests.csproj",
+        "packagesPath": "/Users/joyevans/.nuget/packages/",
+        "outputPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joyevans/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Models/Models.csproj": {
+                "projectPath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Models/Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

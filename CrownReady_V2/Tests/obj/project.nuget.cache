@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FELTZMS+amv4Ze4b5Z7nZUn0km3t2I+Na3oHn0Qr4pzELZ3Jpa6vujLcXlCeLoyP6ukD7cjbzsA9pSViyPJ45Q==",
+  "dgSpecHash": "emaxH/eq35ANjozXPyHZFQ9rkNJ7CRpU5sxjlgjamawMf05zpkuT9U0OmoowV70PURhr7QCjjQ7WQHpi627Qew==",
   "success": true,
-  "projectFilePath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/Tests/Tests.csproj",
+  "projectFilePath": "/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/Tests/Tests.csproj",
   "expectedPackageFiles": [
     "/Users/joyevans/.nuget/packages/coverlet.collector/3.1.0/coverlet.collector.3.1.0.nupkg.sha512",
     "/Users/joyevans/.nuget/packages/microsoft.codecoverage/16.11.0/microsoft.codecoverage.16.11.0.nupkg.sha512",
