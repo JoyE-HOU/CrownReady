@@ -1,9 +1,15 @@
-using DL;
+// using DL;
+using BL;
 using Models;
 
 namespace UI;
 
 public class MainMenu{
+    private CRBL _bl;
+    public MainMenu()
+    {
+        _bl = new CRBL();
+    }
     public void Start(){
 
         bool exit = false;
@@ -37,7 +43,7 @@ public class MainMenu{
                         State = state
                     };
 
-                    StaticStorage.AddStorefront(newStorefront);
+                    _bl.AddStorefront(newStorefront);
 
 
                     Console.WriteLine("Would you like to add another one? [y/n]");
@@ -50,7 +56,7 @@ public class MainMenu{
 
                     case "2":
                     Console.WriteLine("Here are all your storefronts:");
-                    List<Storefront> allStorefronts = StaticStorage.GetAllStorefronts();
+                    List<Storefront> allStorefronts = _bl.GetAllStorefronts();
                     foreach(Storefront store in allStorefronts)
                     {
                     Console.WriteLine($"Store: {store.Name} \nAddress: {store.Address} \nCity: {store.City} \nState: {store.State}");
