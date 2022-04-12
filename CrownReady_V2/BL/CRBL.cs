@@ -17,7 +17,7 @@ public class CRBL
     /// Adds a new storefront to the list
     /// </summary>
     /// <param name="storefront">storefront object to add</param>
-    public void AddStorefront(Storefront storefront)
+    public void AddStorefront(Storefront storefrontToAdd)
     {
         StaticStorage.AddStorefront(storefront);
     }

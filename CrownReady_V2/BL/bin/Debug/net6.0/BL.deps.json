@@ -6,15 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "UI/1.0.0": {
-        "dependencies": {
-          "BL": "1.0.0",
-          "Models": "1.0.0"
-        },
-        "runtime": {
-          "UI.dll": {}
-        }
-      },
       "BL/1.0.0": {
         "dependencies": {
           "DL": "1.0.0",
@@ -40,11 +31,6 @@
     }
   },
   "libraries": {
-    "UI/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "BL/1.0.0": {
       "type": "project",
       "serviceable": false,

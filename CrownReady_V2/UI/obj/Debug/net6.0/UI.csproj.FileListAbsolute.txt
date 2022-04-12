@@ -18,3 +18,5 @@
 /Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/UI/obj/Debug/net6.0/UI.genruntimeconfig.cache
 /Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/UI/bin/Debug/net6.0/DL.dll
 /Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/UI/bin/Debug/net6.0/DL.pdb
+/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/UI/bin/Debug/net6.0/BL.dll
+/Users/joyevans/Desktop/revature_training/projects/Staging/CrownReady/CrownReady_V2/UI/bin/Debug/net6.0/BL.pdb
