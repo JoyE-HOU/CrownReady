@@ -19,6 +19,6 @@ public class CRBL
     /// <param name="storefront">storefront object to add</param>
     public void AddStorefront(Storefront storefrontToAdd)
     {
-        StaticStorage.AddStorefront(storefront);
+        StaticStorage.AddStorefront(storefrontToAdd);
     }
 }
