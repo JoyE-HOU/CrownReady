@@ -5,13 +5,17 @@ using DL;
 namespace BL;
 public class CRBL
 {
+    private FileRepo _dl;
+    public CRBL(){
+        _dl = new FileRepo();
+    }
     /// <summary>
     /// Gets all storefronts
     /// </summary>
     /// <returns></returns>
     public List<Storefront> GetAllStorefronts()
     {
-        return StaticStorage.GetAllStorefronts();
+        return _dl.GetAllStorefronts();
     }
     /// <summary>
     /// Adds a new storefront to the list
@@ -19,6 +23,6 @@ public class CRBL
     /// <param name="storefront">storefront object to add</param>
     public void AddStorefront(Storefront storefrontToAdd)
     {
-        StaticStorage.AddStorefront(storefrontToAdd);
+        _dl.AddStorefront(storefrontToAdd);
     }
 }

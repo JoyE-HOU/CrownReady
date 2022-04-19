@@ -55,9 +55,16 @@ public class StorefrontMenu
                 case "2":
                     Console.WriteLine("Here are all your storefronts:");
                     List<Storefront> allStorefronts = _bl.GetAllStorefronts();
+                    if(allStorefronts.Count == 0)
+                    {
+                        Console.WriteLine("No storefronts found :/");
+                    }
+                    else
+                    {
                     foreach(Storefront store in allStorefronts)
                     {
                     Console.WriteLine($"Store: {store.Name} \nAddress: {store.Address} \nCity: {store.City} \nState: {store.State}");
+                    }
                     }
                     break;
                 

@@ -1,3 +1,4 @@
+using System.Text.Json;
 namespace DL;
 
 public class FileRepo
@@ -12,8 +13,8 @@ public class FileRepo
     public List<Storefront> GetAllStorefronts()
     {
         // returns all storefronts written in the file
-        return new List<Storefront>();
         string jsonString = File.ReadAllText(filePath);
+        return JsonSerializer.Deserialize<List<Storefront>>(jsonString);
     }
     /// <summary>
     /// Adds a new storefront to the list
