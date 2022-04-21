@@ -22,6 +22,10 @@ public class FileRepo
     /// <param name="storefront"> storefront object to be added</param>
     public void AddStorefront(Storefront storefrontToAdd)
     {
-        // adds a new storefront
+        List<Storefront> allStorefronts = GetAllStorefronts();
+        allStorefronts.Add(storefrontToAdd);
+
+        string jsonString = JsonSerializer.Serialize(allStorefronts);
+        File.WriteAllText(filePath, jsonString);
     }
 }
