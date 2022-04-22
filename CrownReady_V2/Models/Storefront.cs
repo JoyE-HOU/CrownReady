@@ -2,6 +2,7 @@
 namespace Models;
 
 public class Storefront {
+    public int Id { get; set; }
     public string? Name { get; set; }
     // Error: string Storefront.Name { get; set; }: Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable. [CrownReady_V2]csharp(CS8618)
     // Solutions:

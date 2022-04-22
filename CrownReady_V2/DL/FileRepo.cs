@@ -28,4 +28,14 @@ public class FileRepo
         string jsonString = JsonSerializer.Serialize(allStorefronts);
         File.WriteAllText(filePath, jsonString);
     }
+/// <summary>
+/// Finds and returns storefront by its index
+/// </summary>
+/// <param name="index">index to search storefronts for</param>
+/// <returns>storefront object</returns>
+    public Storefront GetStorefrontByIndex (int index)
+    {
+        List<Storefront> allStorefronts = GetAllStorefronts();
+        return allStorefronts[index];
+    }
 }
