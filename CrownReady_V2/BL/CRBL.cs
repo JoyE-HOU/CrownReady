@@ -1,7 +1,7 @@
 ﻿// first add `using Models`;
-using Models;
+// using Models;
 // then add reference `dotnet add reference ../Models`; repeat steps for DL
-using DL;
+// using DL;
 namespace BL;
 public class CRBL
 {
