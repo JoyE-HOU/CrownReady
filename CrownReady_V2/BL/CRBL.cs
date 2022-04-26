@@ -3,7 +3,7 @@
 // then add reference `dotnet add reference ../Models`; repeat steps for DL
 // using DL;
 namespace BL;
-public class CRBL
+public class CRBL : IBL
 {
     private FileRepo _dl;
     public CRBL(){
@@ -25,4 +25,9 @@ public class CRBL
     {
         _dl.AddStorefront(storefrontToAdd);
     }
+
+    // public Storefront SearchStorefront (string searchString)
+    // {
+        
+    // }
 }
