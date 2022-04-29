@@ -1,9 +1,10 @@
+using DL;
 namespace UI;
 public class MainMenu{
-    private CRBL _bl;
-    public MainMenu()
+    private IBL _bl;
+    public MainMenu(IBL bl)
     {
-        _bl = new CRBL();
+        _bl = bl;
     }
     public void Start(){
 
@@ -21,7 +22,7 @@ public class MainMenu{
             {
                 case "1":
                     Console.WriteLine("testing");
-                    new StorefrontMenu().Start();
+                    new StorefrontMenu(new CRBL(new FileRepo())).Start();
                     break;
                 
                 case "x":

@@ -1,11 +1,12 @@
+using DL;
 namespace UI;
 public class StorefrontMenu
 {
-    private CRBL _bl;
+    private IBL _bl;
 
-    public StorefrontMenu()
+    public StorefrontMenu(IBL bl)
     {
-        _bl = new CRBL();
+        _bl = bl;
     }
     public void Start()
     {
