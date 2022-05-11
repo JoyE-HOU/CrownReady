@@ -11,4 +11,10 @@ public class Storefront {
     public string? Address { get; set; }
     public string? City { get; set; }
     public string? State { get; set; }
+
+    // override ToString method
+    public override string ToString()
+    {
+        return $"Store: {this.Name} \nAddress: {this.Address} \nCity: {this.City} \nState: {this.State}";
+    }
 }

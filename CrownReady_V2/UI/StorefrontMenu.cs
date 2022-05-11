@@ -64,7 +64,9 @@ public class StorefrontMenu
                     {
                     foreach(Storefront store in allStorefronts)
                     {
-                    Console.WriteLine($"Store: {store.Name} \nAddress: {store.Address} \nCity: {store.City} \nState: {store.State}");
+                    Console.WriteLine(store.ToString());
+                    // Replaced by overridden ToString() method
+                    // Console.WriteLine($"Store: {store.Name} \nAddress: {store.Address} \nCity: {store.City} \nState: {store.State}");
                     }
                     }
                     break;
