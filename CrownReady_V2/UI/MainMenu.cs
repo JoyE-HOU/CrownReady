@@ -16,7 +16,9 @@ public class MainMenu{
             Console.WriteLine("What would you like to do today?");
             Console.WriteLine("[1] Manage Storefront");
             Console.WriteLine("[X] Exit");
+
             string? input = Console.ReadLine();
+
 
             switch (input)
             {
