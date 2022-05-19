@@ -12,9 +12,25 @@ public class FileRepo : IRepo
     /// <returns>all storefront in the list</returns>
     public List<Storefront> GetAllStorefronts()
     {
+        // string jsonString = File.ReadAllText(filePath);
+        // return JsonSerializer.Deserialize<List<Storefront>>(jsonString);
+
+        string jsonString = "";
+        try
+        {
         // returns all storefronts written in the file
-        string jsonString = File.ReadAllText(filePath);
-        return JsonSerializer.Deserialize<List<Storefront>>(jsonString);
+        jsonString = File.ReadAllText(filePath);
+        }
+        catch(FileNotFoundException ex)
+        {
+            Console.WriteLine(ex.Message);
+            jsonString = "";
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        return JsonSerializer.Deserialize<List<Storefront>>(jsonString) ?? new List<Storefront>();
     }
     /// <summary>
     /// Adds a new storefront to the list
