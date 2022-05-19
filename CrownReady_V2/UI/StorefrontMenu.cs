@@ -1,6 +1,6 @@
 using DL;
 namespace UI;
-public class StorefrontMenu
+public class StorefrontMenu : IMenu
 {
     private IBL _bl;
 

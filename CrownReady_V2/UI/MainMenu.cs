@@ -1,6 +1,6 @@
-using DL;
+// using DL;
 namespace UI;
-public class MainMenu{
+public class MainMenu :IMenu {
     private IBL _bl;
     public MainMenu(IBL bl)
     {
@@ -23,8 +23,10 @@ public class MainMenu{
             switch (input)
             {
                 case "1":
-                    Console.WriteLine("testing");
-                    new StorefrontMenu(new CRBL(new FileRepo())).Start();
+                    // new StorefrontMenu(new CRBL(new FileRepo())).Start();
+
+                    // the line below replaces line above due to creation of MenuFactory
+                    MenuFactory.GetMenu("storefront").Start();
                     break;
                 
                 case "x":
