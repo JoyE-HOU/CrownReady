@@ -21,6 +21,7 @@ public class Customer : User {
     public string? City {get; set;}
     public string? State {get; set;}
     public int ZipCode {get; set;}
+    public List<Order>? Orders { get; set; }
     public override void DisplayType(){
         Console.WriteLine(UserType);
     }
