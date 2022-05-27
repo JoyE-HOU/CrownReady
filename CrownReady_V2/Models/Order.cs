@@ -9,14 +9,17 @@ public class Order {
     public List<LineItem>? LineItems { get; set; }
     public decimal Total { get; set; }
 
-    public void CalculateTotal() {
+    public decimal CalculateTotal() {
         // a method to calculate all line items in order
         decimal total = 0;
-        foreach (LineItem lineItem in this.LineItems)
+        if(this.LineItems?.Count > 0)
         {
-            total =+ lineItem.Item.Price * lineItem.Quantity;
+            foreach (LineItem lineItem in this.LineItems)
+            {
+                total =+ lineItem.Item.Price * lineItem.Quantity;
+            }
         }
         this.Total = total;
-        // return total;
+        return total;
     }
 }
