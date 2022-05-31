@@ -1,4 +1,5 @@
 using DL;
+using CustomExceptions;
 namespace UI;
 public class StorefrontMenu : IMenu
 {
@@ -25,6 +26,7 @@ public class StorefrontMenu : IMenu
         switch (input)
             {
                 case "1":
+                    createNewStorefront:
                     Console.WriteLine("Name: ");
                     string? name = Console.ReadLine();
                     Console.WriteLine("Address: ");
@@ -35,15 +37,31 @@ public class StorefrontMenu : IMenu
                     string? state = Console.ReadLine();
             
                     // initialized a class using object initializer instead of an empty constructor
-                    Storefront newStorefront = new Storefront{
-                        Name = name,
-                        Address = address,
-                        City = city,
-                        State = state
-                    };
+                    // Storefront newStorefront = new Storefront{
+                    //     Name = name,
+                    //     Address = address,
+                    //     City = city,
+                    //     State = state
+                    // };
+                    // _bl.AddStorefront(newStorefront);
 
-                    _bl.AddStorefront(newStorefront);
+                    try
+                    {
+                        Storefront newStorefront = new Storefront{
+                            Name = name,
+                            Address = address,
+                            City = city,
+                            State = state
+                        };
+                        _bl.AddStorefront(newStorefront);
 
+                    }
+                    catch (InputInvalidException ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        goto createNewStorefront;
+
+                    }
 
                     Console.WriteLine("Would you like to add another one? [y/n]");
                     string? response = Console.ReadLine();
